@@ -15,8 +15,18 @@ body {
 }
 section {
 	height: 100vh;
+	display: grid;
+	grid-template-areas: 'nav main';
+	grid-template-columns: 20% 70%;
+	grid-gap: 5px;
 	background-color: aqua;
 	scroll-snap-align: start;
+}
+nav {
+	grid-area: nav;
+}
+main {
+	grid-area: main;
 }
 
 #back {
