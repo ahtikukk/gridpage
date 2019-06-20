@@ -24,6 +24,9 @@ section {
 }
 nav {
 	grid-area: nav;
+	position: fixed;
+	display: flex;
+	flex-direction: column;
 }
 main {
 	grid-area: main;
