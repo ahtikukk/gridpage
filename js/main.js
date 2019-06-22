@@ -37,9 +37,10 @@ function setBgrGreeting() {
 		//evening
 		document.body.style.backgroundImage = "url('../img/night.jpg')";
 		greeting.textContent = 'Good Evening';
-		document.body.style.color = 'white';
+		document.getElementById('greeting').style.color = 'white';
 	}
 }
 
 showTime();
+addZero();
 setBgrGreeting();

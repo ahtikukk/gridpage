@@ -1,5 +1,6 @@
-html {
-	scroll-behavior: smooth;
+* {
+	margin: 0;
+	padding: 0;
 }
 
 body {
@@ -12,6 +13,7 @@ body {
 	height: 100vh;
 	overflow-y: scroll;
 	scroll-snap-type: y mandatory;
+	scroll-behavior: smooth;
 }
 section {
 	height: 100vh;
@@ -19,14 +21,25 @@ section {
 	grid-template-areas: 'nav main';
 	grid-template-columns: 20% 70%;
 	grid-gap: 5px;
-	background-color: aqua;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
 	scroll-snap-align: start;
 }
 nav {
 	grid-area: nav;
 	position: fixed;
 	display: flex;
+	height: 100vh;
+	width: 20vw;
 	flex-direction: column;
+	justify-content: center;
+	background-color: #ccc;
+	opacity: .5;
+}
+nav a {
+	align-items: center;
+	text-decoration: none;
 }
 main {
 	grid-area: main;
@@ -34,8 +47,14 @@ main {
 
 #back {
 	position: fixed;
-	bottom: 0;
-	right: 0;
+	bottom: 5;
+	right: 5;
 	width: 30px;
 	border: 3px solid black;
+}
+.watermark {
+	color: #ccc;
+	font-size: 15rem;
+	opacity: .2;
+	z-index: -1;
 }
